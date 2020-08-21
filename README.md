@@ -19,7 +19,7 @@ In meeting the minimum viable product (MVP) specifications listed below, you sho
 
 ### Commits
 
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead as the evaluate your solution.
+Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead as they evaluate your solution.
 
 ## Interview Questions
 
@@ -27,13 +27,31 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    forEach() — executes a provided function once for each array element but doesn’t actually return anything.
+
+    map() — creates a new array with the results of calling a provided function on every element in the calling array.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher-order function is a function that takes another function(s) as an argument(s) and/or returns a function to its callers. A callback function is a function that is passed to another function with the expectation that the other function will call it.
 
 3. What is closure?
 
+It makes it possible for a function to have "private" variables so that they cannot be changed by anything outside of the function for which the variables were created.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window Binding - scope of 'this' when its outside a specific object will just be "window".
+
+Implicit Binding - Only for objects with methods. Using 'this' referring to a specific declared object when the function is invoked. Left of the dot is what will be referred to.
+
+Explicit Binding - Using .call, .apply, or .bind.
+
+"New" Binding - Using 'New' with constructor to build new objects.
+
 5. Why do we need super() in an extended class?
+
+super() is used when creating a child class using extends parent class. This allows the child class to access the properties and methods of the parent class, allowing it to do everything the parent can.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
